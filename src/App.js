@@ -4,14 +4,14 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Login from "./components/Login";
-import Home from "./components/Home";
+import ProductListScreen from "./components/ProductListScreen";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/productlist" element={<ProductListScreen />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </div>

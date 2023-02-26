@@ -53,7 +53,7 @@ const Login = (props) => {
     if (checkBtn.current.context._errors.length === 0) {
       dispatch(login(username, password))
         .then(() => {
-          navigate("/home");
+          navigate("/productlist");
           window.location.reload();
         })
         .catch(() => {
@@ -65,7 +65,7 @@ const Login = (props) => {
   };
 
   if (isLoggedIn) {
-    return <Navigate to="/home" />;
+    return <Navigate to="/productlist" />;
   }
 
   return (
