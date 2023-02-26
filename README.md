@@ -5,6 +5,7 @@
 In the project directory, you can run:
 
 To install dependencies `npm install`
+
 To start local host `npm start`
 
 Runs the app in the development mode.\
