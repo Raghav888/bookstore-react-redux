@@ -33,7 +33,7 @@ To build `npm run build`
 #Dependencies
 1. axios
 2. bootstarp
-3. MantraUI (my own component lib)
+3. MantraUI (my own component lib: https://github.com/Raghav888/Mantra-UI)
 4. react redux
 5. react validation
 6. redux
