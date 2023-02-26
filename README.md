@@ -28,6 +28,7 @@ To build `npm run build`
 7. Add to WishList (ex: BookMark)
 8. For wishlist uses local storage
 9. On logout, clears JWT Token and wishlist from localStorage.
+10. Responsive for few resolution.
 
 #Dependencies
 1. axios
