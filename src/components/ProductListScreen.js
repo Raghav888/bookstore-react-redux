@@ -5,9 +5,9 @@ import { Filterbox } from "./filterBox/FilterBox";
 import { Product } from "./product/Product";
 import { Navbar } from "./shared/Navbar";
 import { Footer } from "./shared/Footer";
-import "./home.css";
+import "./productListScreen.css";
 
-const Home = () => {
+const ProductListScreen = () => {
   const { user: currentUser } = useSelector((state) => state.auth);
 
   if (!currentUser) {
@@ -26,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ProductListScreen;
