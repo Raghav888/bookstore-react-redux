@@ -4,8 +4,8 @@
 
 In the project directory, you can run:
 
-###To install dependencies `npm install`
-###To start local host `npm start`
+To install dependencies `npm install`
+To start local host `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -13,9 +13,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-###To run unit test cases `npm test`
+To run unit test cases `npm test`
 
-###To build `npm run build`
+To build `npm run build`
 
 # Features
 1. Login / Logout (Email and password are hardcoded)
