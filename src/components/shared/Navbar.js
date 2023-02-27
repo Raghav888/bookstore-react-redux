@@ -12,7 +12,18 @@ export function Navbar() {
     dispatch(logout());
   }, [dispatch]);
 
-  const [searchString, setSearch] = useState("");
+  const debounce = (searchString) => {
+    let id;
+    clearTimeout(id);
+    id = setTimeout(
+      () =>
+        dispatch({
+          type: "SEARCH",
+          payload: { value: searchString },
+        }),
+      300
+    );
+  };
 
   return (
     <nav className="mantra-nav head-nav nav-main">
@@ -27,20 +38,8 @@ export function Navbar() {
             className="mantra-search-box mantra-textbox-classic mantra-highlight-box"
             placeholder="  Search"
             type="text "
-            value={searchString === "" ? undefined : searchString}
-            onChange={(event) => setSearch(event.target.value)}
+            onChange={(event) => debounce(event.target.value)}
           />
-          <button
-            className="mantra-button mantra-primary-btn"
-            onClick={() => {
-              dispatch({
-                type: "SEARCH",
-                payload: { value: searchString },
-              });
-            }}
-          >
-            <i className="fa fa-search"></i> Search
-          </button>
         </div>
       ) : (
         <h2 className="login-title">Login Page</h2>
